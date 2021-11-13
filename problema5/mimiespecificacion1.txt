@@ -1,0 +1,62 @@
+Se debe generar un algoritmo y miniespecificación que permita calcular 
+y mostrar el valor total a pagar mensual de servicios básicos de una persona. 
+Los servicios básicos son: agua, telefono. Si la persona es menor a 20 años se descuenta 
+el 20% del total mensual. Para calcular el costo mensual a pagar el agua, se debe ingresar 
+el número de litros de agua consumidos en el mes y el costo de cada litro de agua.
+Para calcular el costo del teléfono, se debe ingresar el número de minutos gastados en el mes y el costo de cada minuto.
+
+----ALGORITMO-----
+1.Inicio
+2.Preguntar la cantidad de litros de agua consumidos en el mes
+3.Preguntar el costo de cada litro de agua
+4.Preguntar el numero de minutos gastados en el mes
+5.Pregunrar el costo de cada minuto
+6.Preguntar la edad del usuario
+7.Calcular el total a pagar del agua multiplicando el cantidad consumida por el costo del litro de agua
+8.Calcular el total a pagar del telefono multiplicando el numero de minutos gastados por el costo del minuto
+9.Sumar la cantidad total a pagar del agua y del telefono
+10.En caso que el usuario tenga menos de 20 años aplicar un descuento del 20% a la cantidad total apagar
+11.Finf
+
+---MINIESPECIFICACION-----
+1.Inicio
+
+2.litrosConsumidos, d[0,n]
+3.costroLitro, d[0,n]
+4.minutosGastados, d[0,n]
+5.costoMinuto, d[0,n]
+6.edad, i[0,n]
+7.totalAgua, d[0,n]
+8.totalTelefono, d[0,n]
+9.totalSB, d[0,n]
+10.porcentaje, d[0,n] <-- 20
+11.descuento, d[0,n]
+
+12.Escribir "Ingresar litros consumidos"
+13.Lea litrosConsumidos
+
+14.EScribir "Ingresar el costo del litro"
+15.Lea costoLitro
+
+16.Escribir "Ingresar minutos gastados durante el mes"
+17.Lea minutosGastados
+
+18.Escribir "Ingresar el costo por minuto"
+19.Lea costoMinuto
+
+20.Escribir "Ingrese su edad"
+21.Lea edad
+
+22.totalAgua<-- litrosConsumidos * costoLitro
+23.totalTelefono <-- minutosGastados * costoMinuto
+24.totalSB <-- totalAgua + totalTelefono
+
+25.Si edad < 20 entonces
+	//totalSB --- 100%
+	//x --------- 20%
+26.descuento <--(porcentaje * totalSB)/100
+27.totalSB <-- totalSB - descuento
+28.Fin Si
+
+29.Escribir "El valor total a pagar es: " + totalSB
+30.fin
