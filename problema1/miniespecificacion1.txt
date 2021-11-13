@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ----EJEMPLO1
 //Solución que permita calcular y mostrar el valor a cancelar de una planilla de luz.
 //Se debe ingresar el valor de costo por kilovatio/hora y el número de kilovatios consumidos en el mes.
@@ -35,3 +36,42 @@
 20.Escribir "eL valor total a pagar es: " + valorTotal
 
 21.Fin
+=======
+// ----EJEMPLO1
+//Solución que permita calcular y mostrar el valor a cancelar de una planilla de luz.
+//Se debe ingresar el valor de costo por kilovatio/hora y el número de kilovatios consumidos en el mes.
+//Si el usuario tiene edad mayor a 65 años, se debe descontrar el 10%.
+
+1. Inicio
+
+2.costoKilovatio, d[0,n]
+3.valorConsumidos, d[0,n]
+4.edad, i[0,n]
+5.descuento, d[0,n]
+6.porcentaje, d[0,n]
+7. porcentaje <-- 10
+8.valorTotal, d[0,n]
+
+9.Escribir "Ingrese el costo por kilovatio"
+10.Lea costoKilovatio
+
+11.Escribir "Ingrese el número de kilovatios consumidos"
+12.Lea valorConsumidos
+
+13.Escribir "Ingrese edad de la persona"
+14.Lea edad // 31
+
+15. valorTotal <-- costoKilovatio * valorConsumidos
+
+16.Si edad > 65
+	// vt ---- 100%
+	// x ---- 10%
+17. descuento <-- (porcentaje * valorTotal)/100
+18. valorTotal <-- valorTotal - descuento // vt <-- 100 - 10
+
+19.Fin si
+
+20.Escribir "eL valor total a pagar es: " + valorTotal
+
+21.Fin
+>>>>>>> d6f87908d7e246549dc4e602ac7c48570ad660d8

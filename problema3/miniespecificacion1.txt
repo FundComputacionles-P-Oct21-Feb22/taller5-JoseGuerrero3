@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Generar una solución que lea la temperatura en grados centı́grados (◦C) 
 //y la convierta a grados Farenheit (◦F) y a grados Kelvin (◦K), siempre y 
 //cuando la temperatura dada en grados centı́grados sea positiva y menor o igual que cien.
@@ -23,4 +24,31 @@
  " La temperatura en grados farenheit es: " + gradosFarenheit +
 " La temperatura en gradosKelvin es: " + gradosKelvin
 
+=======
+//Generar una solución que lea la temperatura en grados centı́grados (◦C) 
+//y la convierta a grados Farenheit (◦F) y a grados Kelvin (◦K), siempre y 
+//cuando la temperatura dada en grados centı́grados sea positiva y menor o igual que cien.
+
+1.Inicio
+
+2.gradosCentigrados, d[0,]
+3.gradosFarenheit, d[0,n]
+4.gradosKelvin, d[0,n]
+
+6.Escribir "Ingresar grados Centigrados"
+7.Lea gradosCentigrados
+
+8.Si gradosCentigrados >= 0 && <= 100
+9.gradosFarenhit <-- 9/5 * gradosCentigrados + 32
+10. gradosKelvin <-- gradosCentigrados + 273.15
+
+11.Por lo contrario
+12.Escribir que los datos no son validos
+11.Fin si
+
+12.Escribir "La temperatura en grados centigrados es: " + gradosCentigrados +
+ " La temperatura en grados farenheit es: " + gradosFarenheit +
+" La temperatura en gradosKelvin es: " + gradosKelvin
+
+>>>>>>> d6f87908d7e246549dc4e602ac7c48570ad660d8
 13.Fin
